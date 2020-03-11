@@ -1,0 +1,1577 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0219.0753                               -->
+<workbook original-version='18.1' source-build='2020.1.0 (20201.20.0219.0753)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <CustomReferenceLineTooltips />
+    <GroupAction />
+    <GroupActionSingleSelect />
+    <Heatmap />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/MakeoverMondayWeek10-ViolenceAgainstWomenandGirls?rev=1.0' id='MakeoverMondayWeek10-ViolenceAgainstWomenandGirls' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='axis'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+    <style-rule element='worksheet'>
+      <format attr='font-size' value='12' />
+    </style-rule>
+    <style-rule element='gridline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+    <style-rule element='all'>
+      <format attr='color' value='#000000' />
+      <format attr='font-family' value='Montserrat' />
+    </style-rule>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-duration' value='0.5' />
+      <format attr='animation-style' value='as-synced' />
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='CHOOSE A COUNTRY' datatype='string' name='[COUNTRY Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;GUINEA&quot;'>
+        <calculation class='tableau' formula='&quot;GUINEA&quot;' />
+        <aliases>
+          <alias key='&quot;CONGO DEMOCRATIC REPUBLIC&quot;' value='DR CONGO' />
+          <alias key='&quot;SAO TOME AND PRINCIPE&quot;' value='SAO TOME &amp; PRINCIPE' />
+        </aliases>
+        <members>
+          <member value='&quot;(NONE)&quot;' />
+          <member value='&quot;AFGHANISTAN&quot;' />
+          <member value='&quot;ALBANIA&quot;' />
+          <member value='&quot;ANGOLA&quot;' />
+          <member value='&quot;ARMENIA&quot;' />
+          <member value='&quot;AZERBAIJAN&quot;' />
+          <member value='&quot;BANGLADESH&quot;' />
+          <member value='&quot;BENIN&quot;' />
+          <member value='&quot;BOLIVIA&quot;' />
+          <member value='&quot;BURKINA FASO&quot;' />
+          <member value='&quot;BURUNDI&quot;' />
+          <member value='&quot;CAMBODIA&quot;' />
+          <member value='&quot;CAMEROON&quot;' />
+          <member value='&quot;CHAD&quot;' />
+          <member value='&quot;COLOMBIA&quot;' />
+          <member value='&quot;COMOROS&quot;' />
+          <member value='&quot;CONGO&quot;' />
+          <member value='&quot;COTE D&apos;IVOIRE&quot;' />
+          <member value='&quot;DOMINICAN REPUBLIC&quot;' />
+          <member alias='DR CONGO' value='&quot;CONGO DEMOCRATIC REPUBLIC&quot;' />
+          <member value='&quot;EGYPT&quot;' />
+          <member value='&quot;ERITREA&quot;' />
+          <member value='&quot;ESWATINI&quot;' />
+          <member value='&quot;ETHIOPIA&quot;' />
+          <member value='&quot;GABON&quot;' />
+          <member value='&quot;GAMBIA&quot;' />
+          <member value='&quot;GHANA&quot;' />
+          <member value='&quot;GUATEMALA&quot;' />
+          <member value='&quot;GUINEA&quot;' />
+          <member value='&quot;GUYANA&quot;' />
+          <member value='&quot;HAITI&quot;' />
+          <member value='&quot;HONDURAS&quot;' />
+          <member value='&quot;INDIA&quot;' />
+          <member value='&quot;INDONESIA&quot;' />
+          <member value='&quot;JORDAN&quot;' />
+          <member value='&quot;KENYA&quot;' />
+          <member value='&quot;KYRGYZ REPUBLIC&quot;' />
+          <member value='&quot;LESOTHO&quot;' />
+          <member value='&quot;LIBERIA&quot;' />
+          <member value='&quot;MADAGASCAR&quot;' />
+          <member value='&quot;MALAWI&quot;' />
+          <member value='&quot;MALDIVES&quot;' />
+          <member value='&quot;MALI&quot;' />
+          <member value='&quot;MOLDOVA&quot;' />
+          <member value='&quot;MOROCCO&quot;' />
+          <member value='&quot;MOZAMBIQUE&quot;' />
+          <member value='&quot;MYANMAR&quot;' />
+          <member value='&quot;NAMIBIA&quot;' />
+          <member value='&quot;NEPAL&quot;' />
+          <member value='&quot;NICARAGUA&quot;' />
+          <member value='&quot;NIGER&quot;' />
+          <member value='&quot;NIGERIA&quot;' />
+          <member value='&quot;PAKISTAN&quot;' />
+          <member value='&quot;PERU&quot;' />
+          <member value='&quot;PHILIPPINES&quot;' />
+          <member value='&quot;RWANDA&quot;' />
+          <member alias='SAO TOME &amp; PRINCIPE' value='&quot;SAO TOME AND PRINCIPE&quot;' />
+          <member value='&quot;SENEGAL&quot;' />
+          <member value='&quot;SIERRA LEONE&quot;' />
+          <member value='&quot;SOUTH AFRICA&quot;' />
+          <member value='&quot;TAJIKISTAN&quot;' />
+          <member value='&quot;TANZANIA&quot;' />
+          <member value='&quot;TIMOR-LESTE&quot;' />
+          <member value='&quot;TOGO&quot;' />
+          <member value='&quot;TURKEY&quot;' />
+          <member value='&quot;TURKMENISTAN&quot;' />
+          <member value='&quot;UGANDA&quot;' />
+          <member value='&quot;UKRAINE&quot;' />
+          <member value='&quot;YEMEN&quot;' />
+          <member value='&quot;ZAMBIA&quot;' />
+          <member value='&quot;ZIMBABWE&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='20200306 Data International Women&apos;s Day Viz5 Launch' inline='true' name='federated.1ejvavi0ozgq9a12lcc0t186qr8m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='20200306 Data International Women&apos;s Day Viz5 Launch' name='textscan.0yzwb9a0h83bvi1c4hwi61w8kzm3'>
+            <connection class='textscan' directory='C:/Users/Ribeiro/Documents/infovis-itba/Week 10 visualization.twb archivos/Data/2020' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0yzwb9a0h83bvi1c4hwi61w8kzm3' name='20200306 Data International Women&apos;s Day Viz5 Launch.csv' table='[20200306 Data International Women&apos;s Day Viz5 Launch#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='RecordID' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='string' name='Demographics Question' ordinal='3' />
+            <column datatype='string' name='Demographics Response' ordinal='4' />
+            <column datatype='string' name='Question' ordinal='5' />
+            <column datatype='date' name='Survey Year' ordinal='6' />
+            <column datatype='real' name='Value' ordinal='7' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[20200306 Data International Women&apos;s Day Viz5 Launch.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RecordID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RecordID]</local-name>
+            <parent-name>[20200306 Data International Women&apos;s Day Viz5 Launch.csv]</parent-name>
+            <remote-alias>RecordID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[20200306 Data International Women&apos;s Day Viz5 Launch.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[20200306 Data International Women&apos;s Day Viz5 Launch.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Demographics Question</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Demographics Question]</local-name>
+            <parent-name>[20200306 Data International Women&apos;s Day Viz5 Launch.csv]</parent-name>
+            <remote-alias>Demographics Question</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Demographics Response</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Demographics Response]</local-name>
+            <parent-name>[20200306 Data International Women&apos;s Day Viz5 Launch.csv]</parent-name>
+            <remote-alias>Demographics Response</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Question</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Question]</local-name>
+            <parent-name>[20200306 Data International Women&apos;s Day Viz5 Launch.csv]</parent-name>
+            <remote-alias>Question</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Survey Year</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Survey Year]</local-name>
+            <parent-name>[20200306 Data International Women&apos;s Day Viz5 Launch.csv]</parent-name>
+            <remote-alias>Survey Year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[20200306 Data International Women&apos;s Day Viz5 Launch.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='FEMALE RESPONSE' datatype='real' default-format='n#,##0&quot;%&quot;;-#,##0&quot;%&quot;' name='[Calculation_1969550807857442818]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Demographics Response], [Question], [Country] : AVG(&#10;IF [Gender]=&apos;F&apos;&#10;THEN [Value]&#10;END&#10;)}' />
+      </column>
+      <column caption='HIGHER RESPONSE' datatype='boolean' name='[Calculation_1969550807857618948]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='AVG([Calculation_1969550807857442818])&gt;AVG([FEMALE RESPONSE (copy)_1969550807857565699])' />
+      </column>
+      <column caption='DUMMY' datatype='string' name='[Calculation_1969550807859257349]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&apos;A&apos;' />
+      </column>
+      <column caption='MAX' datatype='real' name='[Calculation_2021975522355363840]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{MAX([Value])}' />
+      </column>
+      <column caption='MAX HIGHLIGHT' datatype='boolean' name='[Calculation_2021975522357850113]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='AVG([Calculation_1969550807857442818])=WINDOW_MAX(AVG([Calculation_1969550807857442818]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='COUNTRY' datatype='string' name='[Calculation_2021975522372251654]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='UPPER([Country])' />
+        <aliases>
+          <alias key='&quot;CONGO DEMOCRATIC REPUBLIC&quot;' value='DR CONGO' />
+          <alias key='&quot;SAO TOME AND PRINCIPE&quot;' value='SAO TOME &amp; PRINCIPE' />
+        </aliases>
+      </column>
+      <column caption='COUNTRY MATCH' datatype='boolean' name='[Calculation_2021975522380320775]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Calculation_2021975522372251654]=[Parameters].[COUNTRY Parameter]' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='INDICATOR' datatype='string' name='[Demographics Question]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Age&quot;' value='AGE' />
+          <alias key='&quot;Education&quot;' value='EDUCATION' />
+          <alias key='&quot;Employment&quot;' value='EMPLOYMENT' />
+          <alias key='&quot;Marital status&quot;' value='MARITAL STATUS' />
+          <alias key='&quot;Residence&quot;' value='RESIDENCE' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[Demographics Response]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Employed for cash&quot;' value='EMPLOYED FOR CASH' />
+          <alias key='&quot;Employed for kind&quot;' value='EMPLOYED FOR KIND' />
+          <alias key='&quot;Higher&quot;' value='HIGHER' />
+          <alias key='&quot;Married or living together&quot;' value='MARRIED/LIVING TOGETHER' />
+          <alias key='&quot;Never married&quot;' value='NEVER MARRIED' />
+          <alias key='&quot;No education&quot;' value='NO EDUCATION' />
+          <alias key='&quot;Primary&quot;' value='PRIMARY' />
+          <alias key='&quot;Rural&quot;' value='RURAL' />
+          <alias key='&quot;Secondary&quot;' value='SECONDARY' />
+          <alias key='&quot;Unemployed&quot;' value='UNEMPLOYED' />
+          <alias key='&quot;Urban&quot;' value='URBAN' />
+          <alias key='&quot;Widowed, divorced, separated&quot;' value='WIDOWED / DIVORCED / SEPARATED' />
+        </aliases>
+      </column>
+      <column caption='MALE RESPONSE' datatype='real' default-format='n#,##0&quot;%&quot;;-#,##0&quot;%&quot;' name='[FEMALE RESPONSE (copy)_1969550807857565699]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Demographics Response], [Question], [Country] : AVG(&#10;IF [Gender]=&apos;M&apos;&#10;THEN [Value]&#10;END&#10;)}' />
+      </column>
+      <column caption='GENDER' datatype='string' name='[Gender]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;F&quot;' value='FEMALE' />
+          <alias key='&quot;M&quot;' value='MALE' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Question]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;... for at least one specific reason&quot;' value='FOR AT LEAST ONE SPECIFIC REASON' />
+          <alias key='&quot;... if she argues with him&quot;' value='IF SHE ARGUES WITH HIM' />
+          <alias key='&quot;... if she burns the food&quot;' value='IF SHE BURNS THE FOOD' />
+          <alias key='&quot;... if she goes out without telling him&quot;' value='IF SHE GOES OUT WITHOUT TELLING HIM' />
+          <alias key='&quot;... if she neglects the children&quot;' value='IF SHE NEGLECTS THE CHILDREN' />
+          <alias key='&quot;... if she refuses to have sex with him&quot;' value='IF SHE REFUSES TO HAVE SEX WITH HIM' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[RecordID]' role='dimension' type='ordinal' />
+      <column datatype='date' hidden='true' name='[Survey Year]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' default-format='n#,##0&quot;%&quot;;-#,##0&quot;%&quot;' name='[Value]' role='measure' type='quantitative' />
+      <column-instance column='[COUNTRY SET]' derivation='InOut' name='[io:COUNTRY SET:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1969550807857618948]' derivation='None' name='[none:Calculation_1969550807857618948:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_2021975522380320775]' derivation='None' name='[none:Calculation_2021975522380320775:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Demographics Response]' derivation='None' name='[none:Demographics Response:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Question]' derivation='None' name='[none:Question:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1969550807857618948]' derivation='User' name='[usr:Calculation_1969550807857618948:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_2021975522357850113]' derivation='User' name='[usr:Calculation_2021975522357850113:nk:1]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Field'>
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' />
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk]' />
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[Country]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_2021975522357850113]' derivation='User' name='[usr:Calculation_2021975522357850113:nk:2]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Field'>
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk]' />
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[Country]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_2021975522357850113]' derivation='User' name='[usr:Calculation_2021975522357850113:nk:3]' pivot='key' type='nominal'>
+        <table-calc ordering-field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[Country]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Calculation_2021975522357850113]' derivation='User' name='[usr:Calculation_2021975522357850113:nk:4]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Field'>
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' />
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_2021975522357850113]' derivation='User' name='[usr:Calculation_2021975522357850113:nk:5]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Field'>
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[Demographics Response]' />
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[Country]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_2021975522357850113]' derivation='User' name='[usr:Calculation_2021975522357850113:nk:6]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Field'>
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[Question]' />
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[Demographics Response]' />
+          <order field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[Country]' />
+        </table-calc>
+      </column-instance>
+      <group caption='COUNTRY SET' name='[COUNTRY SET]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[Calculation_2021975522372251654]' member='&quot;DOMINICAN REPUBLIC&quot;' />
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/Ribeiro/Documents/infovis-itba/Week 10 visualization.twb archivos/Data/2020/20200306 Data International Women&apos;s Day Viz5 Launch.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/08/2020 06:14:22 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='20200306 Data International Women&apos;s Day Viz5 Launch' increment-value='%null%' refresh-type='create' rows-inserted='12600' timestamp-start='2020-03-08 18:14:22.531' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>RecordID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[RecordID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RecordID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>20200306 Data International Women&apos;s Day Viz5 Launch.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>635</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>20200306 Data International Women&apos;s Day Viz5 Launch.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>20200306 Data International Women&apos;s Day Viz5 Launch.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Demographics Question</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Demographics Question]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Demographics Question</remote-alias>
+              <ordinal>3</ordinal>
+              <family>20200306 Data International Women&apos;s Day Viz5 Launch.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Demographics Response</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Demographics Response]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Demographics Response</remote-alias>
+              <ordinal>4</ordinal>
+              <family>20200306 Data International Women&apos;s Day Viz5 Launch.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Question</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Question]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Question</remote-alias>
+              <ordinal>5</ordinal>
+              <family>20200306 Data International Women&apos;s Day Viz5 Launch.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>6</ordinal>
+              <family>20200306 Data International Women&apos;s Day Viz5 Launch.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>887</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.490654' group-percentage='0.0537383' measure-ordering='alphabetic' measure-percentage='0.401869' parameter-percentage='0.0537383' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1969550807857618948:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#d3d3d3'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#d4d4d4'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#f94600'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_1969550807857618948:nk]' type='palette'>
+            <map to='#aab8c2'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_2021975522357850113:nk:4]' type='palette'>
+            <map to='#000000'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_2021975522357850113:nk:1]' type='palette'>
+            <map to='#000000'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_2021975522357850113:nk:2]' type='palette'>
+            <map to='#000000'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_2021975522357850113:nk:3]' type='palette'>
+            <map to='#000000'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_2021975522357850113:nk:5]' type='palette'>
+            <map to='#000000'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_2021975522357850113:nk:6]' type='palette'>
+            <map to='#000000'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[io:COUNTRY SET:nk]' type='palette'>
+            <map to='#000000'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_2021975522380320775:nk]' type='palette'>
+            <map to='#ae123a'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#da323f'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[COUNTRY SET]' direction='ASC'>
+          <dictionary>
+            <bucket>(&quot;DOMINICAN REPUBLIC&quot;)</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:Calculation_2021975522380320775:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>true</bucket>
+            <bucket>false</bucket>
+            <bucket>%null%</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:Demographics Response:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;No education&quot;</bucket>
+            <bucket>&quot;Primary&quot;</bucket>
+            <bucket>&quot;Secondary&quot;</bucket>
+            <bucket>&quot;Higher&quot;</bucket>
+            <bucket>&quot;15-24&quot;</bucket>
+            <bucket>&quot;25-34&quot;</bucket>
+            <bucket>&quot;35-49&quot;</bucket>
+            <bucket>&quot;Employed for cash&quot;</bucket>
+            <bucket>&quot;Employed for kind&quot;</bucket>
+            <bucket>&quot;Married or living together&quot;</bucket>
+            <bucket>&quot;Never married&quot;</bucket>
+            <bucket>&quot;Rural&quot;</bucket>
+            <bucket>&quot;Unemployed&quot;</bucket>
+            <bucket>&quot;Urban&quot;</bucket>
+            <bucket>&quot;Widowed, divorced, separated&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='CHOOSE A COUNTRY' datatype='string' name='[COUNTRY Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;GUINEA&quot;'>
+          <calculation class='tableau' formula='&quot;GUINEA&quot;' />
+          <aliases>
+            <alias key='&quot;CONGO DEMOCRATIC REPUBLIC&quot;' value='DR CONGO' />
+            <alias key='&quot;SAO TOME AND PRINCIPE&quot;' value='SAO TOME &amp; PRINCIPE' />
+          </aliases>
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight1' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MM2020 W10' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='DUMMY' />
+        <param name='target' value='MM2020 W10' />
+      </command>
+    </action>
+    <action caption='Resaltado 1 (generado)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 1 (2)' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='COUNTRY MATCH' />
+        <param name='target' value='Sheet 1 (2)' />
+      </command>
+    </action>
+    <edit-group-action caption='UPDATE COUNTRY SET' name='[Action1]'>
+      <activation type='on-select' />
+      <source datasource='federated.1ejvavi0ozgq9a12lcc0t186qr8m' type='datasource' />
+      <single-select value='true' />
+      <params>
+        <param name='add-or-remove-marks' value='assign' />
+        <param name='selection-clear-set-option' value='do-nothing' />
+        <param name='target-group' value='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[COUNTRY SET]' />
+      </params>
+    </edit-group-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1 (2)'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#9d7660' fontsize='8'>DATA SOURCE: STATCOMPILER  •  VIZ: Oliver Balfour | @MakeoverMonday @VIZWIZBI</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20200306 Data International Women&apos;s Day Viz5 Launch' name='federated.1ejvavi0ozgq9a12lcc0t186qr8m' />
+            <datasource caption='Parámetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='CHOOSE A COUNTRY' datatype='string' name='[COUNTRY Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;GUINEA&quot;'>
+              <calculation class='tableau' formula='&quot;GUINEA&quot;' />
+              <aliases>
+                <alias key='&quot;CONGO DEMOCRATIC REPUBLIC&quot;' value='DR CONGO' />
+                <alias key='&quot;SAO TOME AND PRINCIPE&quot;' value='SAO TOME &amp; PRINCIPE' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ejvavi0ozgq9a12lcc0t186qr8m'>
+            <column caption='DUMMY' datatype='string' name='[Calculation_1969550807859257349]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&apos;A&apos;' />
+            </column>
+            <column caption='AVG(random())' datatype='real' name='[Calculation_2021975522371387397]' role='measure' type='quantitative' user:unnamed='Sheet 1 (2)'>
+              <calculation class='tableau' formula='AVG(random())' />
+            </column>
+            <column caption='COUNTRY' datatype='string' name='[Calculation_2021975522372251654]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='UPPER([Country])' />
+              <aliases>
+                <alias key='&quot;CONGO DEMOCRATIC REPUBLIC&quot;' value='DR CONGO' />
+                <alias key='&quot;SAO TOME AND PRINCIPE&quot;' value='SAO TOME &amp; PRINCIPE' />
+              </aliases>
+            </column>
+            <column caption='COUNTRY MATCH' datatype='boolean' name='[Calculation_2021975522380320775]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_2021975522372251654]=[Parameters].[COUNTRY Parameter]' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='INDICATOR' datatype='string' name='[Demographics Question]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Age&quot;' value='AGE' />
+                <alias key='&quot;Education&quot;' value='EDUCATION' />
+                <alias key='&quot;Employment&quot;' value='EMPLOYMENT' />
+                <alias key='&quot;Marital status&quot;' value='MARITAL STATUS' />
+                <alias key='&quot;Residence&quot;' value='RESIDENCE' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Demographics Response]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Employed for cash&quot;' value='EMPLOYED FOR CASH' />
+                <alias key='&quot;Employed for kind&quot;' value='EMPLOYED FOR KIND' />
+                <alias key='&quot;Higher&quot;' value='HIGHER' />
+                <alias key='&quot;Married or living together&quot;' value='MARRIED/LIVING TOGETHER' />
+                <alias key='&quot;Never married&quot;' value='NEVER MARRIED' />
+                <alias key='&quot;No education&quot;' value='NO EDUCATION' />
+                <alias key='&quot;Primary&quot;' value='PRIMARY' />
+                <alias key='&quot;Rural&quot;' value='RURAL' />
+                <alias key='&quot;Secondary&quot;' value='SECONDARY' />
+                <alias key='&quot;Unemployed&quot;' value='UNEMPLOYED' />
+                <alias key='&quot;Urban&quot;' value='URBAN' />
+                <alias key='&quot;Widowed, divorced, separated&quot;' value='WIDOWED / DIVORCED / SEPARATED' />
+              </aliases>
+            </column>
+            <column caption='GENDER' datatype='string' name='[Gender]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='FEMALE' />
+                <alias key='&quot;M&quot;' value='MALE' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Question]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;... for at least one specific reason&quot;' value='FOR AT LEAST ONE SPECIFIC REASON' />
+                <alias key='&quot;... if she argues with him&quot;' value='IF SHE ARGUES WITH HIM' />
+                <alias key='&quot;... if she burns the food&quot;' value='IF SHE BURNS THE FOOD' />
+                <alias key='&quot;... if she goes out without telling him&quot;' value='IF SHE GOES OUT WITHOUT TELLING HIM' />
+                <alias key='&quot;... if she neglects the children&quot;' value='IF SHE NEGLECTS THE CHILDREN' />
+                <alias key='&quot;... if she refuses to have sex with him&quot;' value='IF SHE REFUSES TO HAVE SEX WITH HIM' />
+              </aliases>
+            </column>
+            <column aggregation='Avg' datatype='real' default-format='n#,##0&quot;%&quot;;-#,##0&quot;%&quot;' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value]' derivation='Avg' name='[avg:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2021975522380320775]' derivation='Max' name='[max:Calculation_2021975522380320775:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1969550807859257349]' derivation='None' name='[none:Calculation_1969550807859257349:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2021975522372251654]' derivation='None' name='[none:Calculation_2021975522372251654:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2021975522380320775]' derivation='None' name='[none:Calculation_2021975522380320775:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Demographics Question]' derivation='None' name='[none:Demographics Question:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Demographics Response]' derivation='None' name='[none:Demographics Response:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Question]' derivation='None' name='[none:Question:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2021975522371387397]' derivation='User' name='[usr:Calculation_2021975522371387397:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_1969550807859257349:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;A&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <computed-sort column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522372251654:nk]' direction='DESC' using='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[max:Calculation_2021975522380320775:nk]' />
+          <manual-sort column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522380320775:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>true</bucket>
+              <bucket>false</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Question:nk]'>
+            <groupfilter function='member' level='[none:Demographics Question:nk]' member='&quot;Education&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Gender:nk]'>
+            <groupfilter function='member' level='[none:Gender:nk]' member='&quot;F&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]'>
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;... if she argues with him&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' direction='DESC' using='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[avg:Value:qk]' />
+          <slices>
+            <column>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Question:nk]</column>
+            <column>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Gender:nk]</column>
+            <column>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[avg:Value:qk]' scope='cols' value='true' />
+            <encoding attr='space' class='0' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[usr:Calculation_2021975522371387397:qk]' field-type='quantitative' max='2.0' min='-1.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[usr:Calculation_2021975522371387397:qk]' scope='rows' value='' />
+            <format attr='display' class='0' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[usr:Calculation_2021975522371387397:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[avg:Value:qk]' field-type='quantitative' major-origin='0.0' major-spacing='50.0' max='120.0' min='-5.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[avg:Value:qk]' scope='cols' value='' />
+            <format attr='render-fold-reversed' value='true' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' value='196' />
+            <format attr='height' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk]' value='44' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk]' value='bold' />
+            <format attr='font-size' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk]' value='12' />
+            <format attr='font-weight' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' value='bold' />
+            <format attr='color' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' value='#000000' />
+            <format attr='vertical-align' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' value='center' />
+            <format attr='text-align' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522380320775:nk]' field-type='nominal' max-size='1' min-size='0.620833' reverse='true' type='catsize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#ffaa7f' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='10' />
+            <format attr='in-tooltip' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[usr:Calculation_2021975522371387397:qk]' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='stroke-color' id='refline1' value='#000000' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+            <format attr='stroke-size' id='refline2' value='0' />
+            <format attr='line-visibility' id='refline2' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='dotted' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Question:nk]' value='  CHOOSE AN INDICATOR' />
+            <format attr='title' field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' value='&#10;   CHOOSE SCENARIO' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522372251654:nk]' />
+              <lod column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Question:nk]' />
+              <lod column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_1969550807859257349:nk]' />
+              <lod column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522380320775:nk]' />
+              <lod column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522380320775:nk]' />
+              <color column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522380320775:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[avg:Value:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label-type='none' scope='per-pane' tooltip-type='none' value='0.0' value-column='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[avg:Value:qk]' z-order='1' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true'>&lt;[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522372251654:nk]&gt; | &lt;[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Question:nk]&gt; | &lt;[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#787878'>WIFE BEATING IS JUSTIFIED </run>
+                <run bold='true' fontsize='12'>&lt;[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[avg:Value:qk]&gt; </run>
+                <run fontcolor='#787878'>OF THE TIME</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'>&lt;[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='3.7900552749633789' />
+                <format attr='shape' value=':filled/times' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='density-kernel-size' value='3.5248618125915527' />
+                <format attr='mark-transparency' value='219' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk] * [federated.1ejvavi0ozgq9a12lcc0t186qr8m].[usr:Calculation_2021975522371387397:qk])</rows>
+        <cols>([federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk] * [federated.1ejvavi0ozgq9a12lcc0t186qr8m].[avg:Value:qk])</cols>
+      </table>
+      <simple-id uuid='{FAB45DBD-BE50-428F-A05E-583D7C2CE518}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='MM2020 W10'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/MakeoverMondayWeek10-ViolenceAgainstWomenandGirls/MM2020W10?rev=' id='31248130' path='/workbooks/MakeoverMondayWeek10-ViolenceAgainstWomenandGirls' revision='' />
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='font-size' value='10' />
+        </style-rule>
+      </style>
+      <size maxheight='600' maxwidth='1100' minheight='600' minwidth='1100' preset-index='3' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Parámetros' name='Parameters' />
+        <datasource caption='20200306 Data International Women&apos;s Day Viz5 Launch' name='federated.1ejvavi0ozgq9a12lcc0t186qr8m' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='CHOOSE A COUNTRY' datatype='string' name='[COUNTRY Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;GUINEA&quot;'>
+          <calculation class='tableau' formula='&quot;GUINEA&quot;' />
+          <aliases>
+            <alias key='&quot;CONGO DEMOCRATIC REPUBLIC&quot;' value='DR CONGO' />
+            <alias key='&quot;SAO TOME AND PRINCIPE&quot;' value='SAO TOME &amp; PRINCIPE' />
+          </aliases>
+          <members>
+            <member value='&quot;(NONE)&quot;' />
+            <member value='&quot;AFGHANISTAN&quot;' />
+            <member value='&quot;ALBANIA&quot;' />
+            <member value='&quot;ANGOLA&quot;' />
+            <member value='&quot;ARMENIA&quot;' />
+            <member value='&quot;AZERBAIJAN&quot;' />
+            <member value='&quot;BANGLADESH&quot;' />
+            <member value='&quot;BENIN&quot;' />
+            <member value='&quot;BOLIVIA&quot;' />
+            <member value='&quot;BURKINA FASO&quot;' />
+            <member value='&quot;BURUNDI&quot;' />
+            <member value='&quot;CAMBODIA&quot;' />
+            <member value='&quot;CAMEROON&quot;' />
+            <member value='&quot;CHAD&quot;' />
+            <member value='&quot;COLOMBIA&quot;' />
+            <member value='&quot;COMOROS&quot;' />
+            <member value='&quot;CONGO&quot;' />
+            <member value='&quot;COTE D&apos;IVOIRE&quot;' />
+            <member value='&quot;DOMINICAN REPUBLIC&quot;' />
+            <member alias='DR CONGO' value='&quot;CONGO DEMOCRATIC REPUBLIC&quot;' />
+            <member value='&quot;EGYPT&quot;' />
+            <member value='&quot;ERITREA&quot;' />
+            <member value='&quot;ESWATINI&quot;' />
+            <member value='&quot;ETHIOPIA&quot;' />
+            <member value='&quot;GABON&quot;' />
+            <member value='&quot;GAMBIA&quot;' />
+            <member value='&quot;GHANA&quot;' />
+            <member value='&quot;GUATEMALA&quot;' />
+            <member value='&quot;GUINEA&quot;' />
+            <member value='&quot;GUYANA&quot;' />
+            <member value='&quot;HAITI&quot;' />
+            <member value='&quot;HONDURAS&quot;' />
+            <member value='&quot;INDIA&quot;' />
+            <member value='&quot;INDONESIA&quot;' />
+            <member value='&quot;JORDAN&quot;' />
+            <member value='&quot;KENYA&quot;' />
+            <member value='&quot;KYRGYZ REPUBLIC&quot;' />
+            <member value='&quot;LESOTHO&quot;' />
+            <member value='&quot;LIBERIA&quot;' />
+            <member value='&quot;MADAGASCAR&quot;' />
+            <member value='&quot;MALAWI&quot;' />
+            <member value='&quot;MALDIVES&quot;' />
+            <member value='&quot;MALI&quot;' />
+            <member value='&quot;MOLDOVA&quot;' />
+            <member value='&quot;MOROCCO&quot;' />
+            <member value='&quot;MOZAMBIQUE&quot;' />
+            <member value='&quot;MYANMAR&quot;' />
+            <member value='&quot;NAMIBIA&quot;' />
+            <member value='&quot;NEPAL&quot;' />
+            <member value='&quot;NICARAGUA&quot;' />
+            <member value='&quot;NIGER&quot;' />
+            <member value='&quot;NIGERIA&quot;' />
+            <member value='&quot;PAKISTAN&quot;' />
+            <member value='&quot;PERU&quot;' />
+            <member value='&quot;PHILIPPINES&quot;' />
+            <member value='&quot;RWANDA&quot;' />
+            <member alias='SAO TOME &amp; PRINCIPE' value='&quot;SAO TOME AND PRINCIPE&quot;' />
+            <member value='&quot;SENEGAL&quot;' />
+            <member value='&quot;SIERRA LEONE&quot;' />
+            <member value='&quot;SOUTH AFRICA&quot;' />
+            <member value='&quot;TAJIKISTAN&quot;' />
+            <member value='&quot;TANZANIA&quot;' />
+            <member value='&quot;TIMOR-LESTE&quot;' />
+            <member value='&quot;TOGO&quot;' />
+            <member value='&quot;TURKEY&quot;' />
+            <member value='&quot;TURKMENISTAN&quot;' />
+            <member value='&quot;UGANDA&quot;' />
+            <member value='&quot;UKRAINE&quot;' />
+            <member value='&quot;YEMEN&quot;' />
+            <member value='&quot;ZAMBIA&quot;' />
+            <member value='&quot;ZIMBABWE&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1ejvavi0ozgq9a12lcc0t186qr8m'>
+        <column caption='INDICATOR' datatype='string' name='[Demographics Question]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;Age&quot;' value='AGE' />
+            <alias key='&quot;Education&quot;' value='EDUCATION' />
+            <alias key='&quot;Employment&quot;' value='EMPLOYMENT' />
+            <alias key='&quot;Marital status&quot;' value='MARITAL STATUS' />
+            <alias key='&quot;Residence&quot;' value='RESIDENCE' />
+          </aliases>
+        </column>
+        <column datatype='string' name='[Question]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;... for at least one specific reason&quot;' value='FOR AT LEAST ONE SPECIFIC REASON' />
+            <alias key='&quot;... if she argues with him&quot;' value='IF SHE ARGUES WITH HIM' />
+            <alias key='&quot;... if she burns the food&quot;' value='IF SHE BURNS THE FOOD' />
+            <alias key='&quot;... if she goes out without telling him&quot;' value='IF SHE GOES OUT WITHOUT TELLING HIM' />
+            <alias key='&quot;... if she neglects the children&quot;' value='IF SHE NEGLECTS THE CHILDREN' />
+            <alias key='&quot;... if she refuses to have sex with him&quot;' value='IF SHE REFUSES TO HAVE SEX WITH HIM' />
+          </aliases>
+        </column>
+        <column-instance column='[Demographics Question]' derivation='None' name='[none:Demographics Question:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Question]' derivation='None' name='[none:Question:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='18' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+          <zone fixed-size='188' h='31333' id='19' is-fixed='true' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+            <zone fixed-size='205' h='31333' id='28' is-fixed='true' param='vert' type='layout-flow' w='18636' x='0' y='0'>
+              <zone fixed-size='57' h='10833' id='27' is-fixed='true' mode='dropdown' name='Sheet 1 (2)' param='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Question:nk]' show-all='false' show-exclude='false' show-mode='false' type='filter' values='database' w='17908' x='364' y='667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='padding' value='6' />
+                  <format attr='background-color' value='#ffaa7f' />
+                </zone-style>
+              </zone>
+              <zone custom-title='true' h='8333' id='41' mode='compact' param='[Parameters].[COUNTRY Parameter]' type='paramctrl' w='17908' x='364' y='11500'>
+                <formatted-text>
+                  <run fontsize='9'>  CHOOSE A COUNTRY</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='padding' value='6' />
+                  <format attr='padding-top' value='0' />
+                  <format attr='padding-bottom' value='0' />
+                  <format attr='background-color' value='#ffaa7f' />
+                </zone-style>
+              </zone>
+              <zone h='10500' id='53' mode='dropdown' name='Sheet 1 (2)' param='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]' show-all='false' show-exclude='false' type='filter' values='database' w='17908' x='364' y='19833'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+                <format attr='padding' value='4' />
+                <format attr='background-color' value='#ffaa7f' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='1' h='31333' id='26' is-fixed='true' type='empty' w='1364' x='18636' y='0'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-right' value='10' />
+                <format attr='background-color' value='#000000' />
+              </zone-style>
+            </zone>
+            <zone forceUpdate='true' h='31333' id='20' type='text' w='80000' x='20000' y='0'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-left' value='10' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='background-color' value='#ffaa7f' />
+            </zone-style>
+          </zone>
+          <zone h='68667' id='17' name='Sheet 1 (2)' show-caption='true' show-title='false' w='100000' x='0' y='31333'>
+            <layout-cache minheight='195' minwidth='496' type-h='scalable' type-w='scalable' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#ffaa7f' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffaa7f' />
+          </zone-style>
+        </zone>
+        <zone h='29333' id='57' is-centered='0' is-scaled='1' param='C:/Users/Ribeiro/Downloads/Untitled Diagram (10).png' type='bitmap' w='75000' x='23091' y='1167' />
+        <zone forceUpdate='true' h='25667' id='56' type='text' w='30000' x='33182' y='3000'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#9d7660' fontname='Bahnschrift SemiBold' fontsize='28'>STOP VIOLENCE </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#9d7660' fontname='Bahnschrift SemiBold' fontsize='28'>AGAINST WOMEN</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='29500' id='58' type='text' w='24182' x='63909' y='1167'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#936640' fontname='Tableau Bold' fontsize='10'>A survey of women and men in African, Asian, and South American countries explored the circumstances where committing acts of violence against women is perceived as justified. This study suggests that the key to ending any justification of violence is education and awareness raising.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='51' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97714' id='50' param='vert' type='layout-flow' w='95734' x='2133' y='1143'>
+                <zone forceUpdate='true' h='30286' id='20' type='text' w='95734' x='2133' y='1143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffaa7f' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='7143' id='41' mode='compact' param='[Parameters].[COUNTRY Parameter]' type='paramctrl' w='95734' x='2133' y='31429'>
+                  <formatted-text>
+                    <run fontsize='9'>  CHOOSE A COUNTRY</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffaa7f' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='57' h='7000' id='27' mode='dropdown' name='Sheet 1 (2)' param='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Question:nk]' show-all='false' show-exclude='false' show-mode='false' type='filter' values='database' w='95734' x='2133' y='38572'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffaa7f' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41143' id='17' is-fixed='true' name='Sheet 1 (2)' show-caption='true' show-title='false' w='95734' x='2133' y='45572'>
+                  <layout-cache minheight='695' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffaa7f' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='background-color' value='#ffaa7f' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{269ECFD3-3A85-4461-8A96-2D7E56515A8F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='MM2020 W10'>
+      <viewpoints>
+        <viewpoint name='Sheet 1 (2)'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='horizontal'>
+                <node-reference>
+                  <fields>
+                    <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk]</field>
+                  </fields>
+                  <multibucket>
+                    <bucket>&quot;Secondary&quot;</bucket>
+                  </multibucket>
+                </node-reference>
+                <page-reference />
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
+          <highlight field='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522380320775:nk]' type='highlight'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{635D4822-2110-47EF-BF54-201E6D4D7D47}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 1 (2)' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='1' param='[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522380320775:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[INDICATOR SET]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[Set 2]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_1969550807852675073:nk]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_1969550807859257349:nk]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Calculation_2021975522372251654:nk]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Country:nk]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Question:nk]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Demographics Response:nk]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Gender:nk]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[none:Question:nk]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[usr:Calculation_1969550807857618948:nk]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[usr:Calculation_2021975522357850113:nk:6]</field>
+            <field>[federated.1ejvavi0ozgq9a12lcc0t186qr8m].[yr:Survey Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{788E62D7-365C-4278-8078-9616E8959BD8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='MM2020 W10' width='192'>
+      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
+      P7gojPWxQ9c1AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
