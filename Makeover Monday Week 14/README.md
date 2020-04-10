@@ -4,4 +4,4 @@ Original article available [here](https://yougov.co.uk/topics/politics/articles-
 
 My interactive visualization is available online: [try it out](https://my.visme.co/view/76pqmwzz-makeover-monday-week-13)
 
-![Screenshot of the visualization](https://raw.githubusercontent.com/Obalfour/infovis-itba/master/Makeover%20Monday%20Week%2013/Week%2013%20visualization.jpg)
+![Screenshot of the visualization](https://raw.githubusercontent.com/Obalfour/infovis-itba/gh-pages/Makeover%20Monday%20Week%2014/Week%2014%20visualization.png)
