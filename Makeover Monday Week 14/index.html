@@ -4,17 +4,28 @@
 <title>Unpaid work: Allocation of time and time-use</title>
 
 <body>
-  <center><h1 id="title">The other side of the coin</h1>
+  <center>
+  <div id="wrapper">
+    <h1 id="viztitle">THE GENDER INEQUALITY ON UNPAID WORK</h1><hr>
+  <div id="first">
+  <center>
+    <h2 id="title">The other side of the coin</h2>
+    <p id="explore">Explore how much time do <span style="color:#1ab7ea">men</span> and <span style="color:#e040fb">women</span><br>
+      spend doing paid or unpaid work.</p>
     <div id="chart"></div>
-  <select name="report-type" id="report-select">
+    <select name="report-type" id="report-select">
   </select>
   <select name="report-type2" id="report-select2">
     <option value="1">Paid and subsistence work</option>
     <option value="2">Unpaid domestic, care and volunteer work</option>
   </select>
-    <p>Explore how much time do <span style="color:#1ab7ea">men</span> and <span style="color:#e040fb">women</span><br>
-      spend doing paid or unpaid work.</p>
     </center>
+    </div>
+    <div id="second" class="flourish-embed flourish-map" data-src="visualisation/1867625" data-url="https://flo.uri.sh/visualisation/1867625/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    <hr>
+    <footer><p id="footer">Data Source: UN Stats | VIZ: Oliver Balfour | #MakeoverMonday</p></footer>
+  </div>
+    <center>
 <script>
     $('#report-select').on('change', function () {
       drawChart();
@@ -132,7 +143,7 @@
           series: [20, 30],
           chart: {
           id: 'chart1',
-          height: 390,
+          height: 270,
           type: 'radialBar',
         },
         plotOptions: {
