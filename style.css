@@ -1,3 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+#body-unpaid {
+  font-family: Roboto, sans-serif;
+}
+
+#wrapper {
+  width: 1020px;
+  overflow: hidden;
+ /* will contain if #first is longer than #second */;
+}
+
+#first {
+  padding-top: 15px;
+  float: left;
+ /* add this */;
+}
+
+#second {
+  width: 700px;
+  overflow: hidden;
+ /* if you don't want #second to wrap below #first */
+}
+
+#chart {
+  max-width: 650px;
+  margin: 0px auto;
+}
+
+#title {
+  max-width: 650px;
+  margin: 0px auto;
+  font-size: 26px;
+  color: #757575;
+}
+
+#report-select {
+  max-width: 94px;
+}
+
+#report-select2 {
+  max-width: 194px;
+}
+
+#viztitle {
+  font-family: "Lato";
+  font-size: 45px;
+  margin: 5px auto;
+  color: #9C27B0;
+  text-align: center;
+}
+
+#footer {
+  font-family: sans-serif;
+  font-weight: 300;
+   color: #757575;
+}
+
+#explore {
+  font-size: 15px;
+  margin: 5px auto;
+}
+
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {

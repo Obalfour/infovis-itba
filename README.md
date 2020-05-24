@@ -5,6 +5,5 @@ Information Visualization @ITBA
 
 Visualizations will include:
 
-- Makeover Monday weeks 9 to 17
+- Makeover Monday weeks 9 to 15
 - Personal Information project
-- VAST Challenge submission
