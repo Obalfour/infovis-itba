@@ -30,6 +30,17 @@
 
   <div class="row">
     <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100" id="myBtn7">
+        <a href="#"><img class="card-img-top" src="https://raw.githubusercontent.com/Obalfour/infovis-itba/gh-pages/Popular%20Names/Popular%20Names%20Thumbnail.png" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a>Popular Names</a>
+          </h4>
+          <p class="card-text">Top names in Argentina from 1990 to 2015</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
       <div class="card h-100" id="myBtn1">
         <a href="#"><img class="card-img-top" src="https://github.com/Obalfour/infovis-itba/blob/gh-pages/Makeover%20Monday%20Week%2015/Week%2015%20Thumbnail.png?raw=true" alt=""></a>
         <div class="card-body">
@@ -89,7 +100,7 @@
         <a href="#"><img class="card-img-top" src="https://github.com/Obalfour/infovis-itba/blob/gh-pages/Makeover%20Monday%20Week%209/Week%209%20Thumbnail.png?raw=true" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a>Kids Sleep</a>
+            <a>Costing Kids Sleep</a>
           </h4>
           <p class="card-text">Makeover Monday Week 9</p>
         </div>
@@ -244,16 +255,148 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-  <div class="modal-header">
+    <div class="modal-header">
         <span class="close" id="close6">&times;</span>
-  </div>
-  <div class="modal-body">
-    <center>
-    <img src="https://raw.githubusercontent.com/Obalfour/infovis-itba/gh-pages/Makeover%20Monday%20Week%209/Week%209%20Visualization.png">
+    </div>
+    <div class="modal-body">
+      <center>
+        <img src="https://raw.githubusercontent.com/Obalfour/infovis-itba/gh-pages/Makeover%20Monday%20Week%209/Week%209%20Visualization.png">
       </center>
+    </div>
   </div>
 </div>
+
+  <!-- The Modal -->
+<div class="modal" id="myModal7">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+        <span class="close" id="close7">&times;</span>
+    </div>
+    <div class="modal-body">
+      <!-- Flex Container -->
+      <div class="conjunto">  
+      <!-- Flex Items: Flexbox Letters -->
+        <div class="green letter-block">
+          <span>P</span>
+        </div>
+        <div class="yellow letter-block">
+          <span>O</span>
+        </div>
+        <div class="blue letter-block">
+          <span>P</span>
+        </div>
+        <div class="red letter-block">
+          <span>U</span>
+        </div>
+        <div class="green letter-block">
+          <span>L</span>
+        </div>  
+        <div class="green letter-block">
+          <span>A</span>
+        </div>
+        <div class="yellow letter-block">
+          <span>R</span>
+        </div>
+      </div>
+    <div class="conjunto">  
+    <!-- Flex Items: Flexbox Letters -->
+      <div class="green letter-block">
+        <span>N</span>
+      </div>
+      <div class="yellow letter-block">
+        <span>A</span>
+      </div>
+      <div class="blue letter-block">
+        <span>M</span>
+      </div>
+      <div class="red letter-block">
+        <span>E</span>
+      </div>
+      <div class="green letter-block">
+        <span>S</span>
+      </div>
+    </div>
+    <style>
+    /*
+    Task: Center Flexbox in the middle of    
+    the page regardless of screen size
+    */
+
+    .conjunto {
+  
+    /* Display */
+      display: flex;
+  
+    /* Content Direction */
+      flex-direction: row;
+   
+    /* Justify Content: Main Axis */
+      justify-content: center;
+  
+    /* Align Content: Cross Axis */
+      align-items: center;
+  
+    /* Content Wrapping */
+      flex-wrap: nowrap;
+  
+    /* Justify Content: Cross Axis */
+      align-content: flex-start;
+    }
+
+    .letter-block {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2em;
+      border: 6px solid black;
+      padding: 0.1em 0.25em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      margin: 5px;
+    }
+
+    /***************************
+        LETTER BLOCK - COLORS
+    ***************************/
+
+    .green {
+      color: DarkGreen;
+      border-color: DarkGreen;
+    }
+
+    .blue {
+      color: DarkBlue;
+      border-color: DarkBlue;
+    }
+
+    .red {
+      color: DarkRed;
+      border-color: DarkRed;
+    }
+
+    .yellow {
+      color: DarkOrange;
+      border-color: DarkOrange;
+    }
+      </style>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
+      <div id="observablehq-8b295b73">
+  <div class="observablehq-chart"></div>
+  <div class="observablehq-viewof-replay"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@obalfour/untitled/2.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "chart") return Inspector.into("#observablehq-8b295b73 .observablehq-chart")();
+    if (name === "viewof replay") return Inspector.into("#observablehq-8b295b73 .observablehq-viewof-replay")();
+  });
+</script>
+    </div>
   </div>
+</div>
 
 <script type='text/javascript'>
     var divElement = document.getElementById('viz1587234428844');
@@ -470,6 +613,7 @@ var btn3 = document.getElementById("myBtn3");
 var btn4 = document.getElementById("myBtn4");
 var btn5 = document.getElementById("myBtn5");
 var btn6 = document.getElementById("myBtn6");
+var btn7 = document.getElementById("myBtn7");
 
 // Get the <span> element that closes the modal
 var span = document.getElementById("close");
@@ -478,6 +622,7 @@ var span3 = document.getElementById("close3");
 var span4 = document.getElementById("close4");
 var span5 = document.getElementById("close5");
 var span6 = document.getElementById("close6");
+var span7 = document.getElementById("close7");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -509,9 +654,16 @@ btn6.onclick = function() {
   modal = document.getElementById("myModal6");
   modal.style.display = "block";
 }
+
+btn7.onclick = function() {
+  modal = document.getElementById("myModal7");
+  modal.style.display = "block";
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  location.reload();
 }
 
 span2.onclick = function() {
@@ -524,13 +676,19 @@ span3.onclick = function() {
 
 span4.onclick = function() {
   modal.style.display = "none";
+  location.reload();
 }
 
 span5.onclick = function() {
   modal.style.display = "none";
+  location.reload();
 }
 
 span6.onclick = function() {
+  modal.style.display = "none";
+}
+
+span7.onclick = function() {
   modal.style.display = "none";
 }
 
@@ -538,6 +696,7 @@ span6.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    location.reload();
   }
 }
 </script>
