@@ -5,7 +5,8 @@ All the visualizations are available in [my portfolio](https://obalfour.github.i
 
 # Summary
 
-Visualizations will include:
+Visualizations include:
 
 - Makeover Monday weeks 9 to 15
 - Personal Information project
+- Popular Names visualization
