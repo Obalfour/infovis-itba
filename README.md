@@ -3,6 +3,8 @@ Information Visualization @ITBA
 
 All the visualizations are available in [my portfolio](https://obalfour.github.io/infovis-itba/index.html)
 
+![Screenshot of the portfolio](./portfolio.png)
+
 # Summary
 
 Visualizations include:
