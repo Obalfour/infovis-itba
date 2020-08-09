@@ -30,6 +30,17 @@
 
   <div class="row">
     <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100" id="myBtn8">
+        <a href="#"><img class="card-img-top" src="https://raw.githubusercontent.com/Obalfour/infovis-itba/gh-pages/Popular%20Names/Popular%20Names%20Thumbnail.png" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a>Datagram</a>
+          </h4>
+          <p class="card-text">Analyzing my Instagram account</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
       <div class="card h-100" id="myBtn7">
         <a href="#"><img class="card-img-top" src="https://raw.githubusercontent.com/Obalfour/infovis-itba/gh-pages/Popular%20Names/Popular%20Names%20Thumbnail.png" alt=""></a>
         <div class="card-body">
@@ -382,24 +393,50 @@
     }
       </style>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
+      <p>
+      <p>
       <div id="observablehq-8b295b73">
-  <div class="observablehq-chart"></div>
-  <div class="observablehq-viewof-replay"></div>
+        <div class="observablehq-chart"></div>
+        <div class="observablehq-viewof-replay"></div>
+      </div>
+      <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@obalfour/untitled/2.js?v=3";
+          (new Runtime).module(define, name => {
+          if (name === "chart") return Inspector.into("#observablehq-8b295b73 .observablehq-chart")();
+          if (name === "viewof replay") return Inspector.into("#observablehq-8b295b73 .observablehq-viewof-replay")();
+          });
+      </script>
+    </div>
+  </div>
 </div>
-<script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import define from "https://api.observablehq.com/@obalfour/untitled/2.js?v=3";
-  (new Runtime).module(define, name => {
-    if (name === "chart") return Inspector.into("#observablehq-8b295b73 .observablehq-chart")();
-    if (name === "viewof replay") return Inspector.into("#observablehq-8b295b73 .observablehq-viewof-replay")();
-  });
-</script>
+
+<!-- The Modal -->
+<div class="modal" id="myModal8">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+        <span class="close" id="close8">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class='tableauPlaceholder' id='viz1596936943986' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Datagram&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Datagram&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Datagram&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es' /></object></div>               
     </div>
   </div>
 </div>
 
 <script type='text/javascript'>
     var divElement = document.getElementById('viz1587234428844');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = '827px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1596936943986');
     var vizElement = divElement.getElementsByTagName('object')[0];
     vizElement.style.width = '100%';
     vizElement.style.height = '827px';
@@ -660,6 +697,11 @@ btn7.onclick = function() {
   modal.style.display = "block";
 }
 
+btn8.onclick = function() {
+  modal = document.getElementById("myModal7");
+  modal.style.display = "block";
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
@@ -690,6 +732,11 @@ span6.onclick = function() {
 
 span7.onclick = function() {
   modal.style.display = "none";
+}
+
+span8.onclick = function() {
+  modal.style.display = "none";
+  location.reload();
 }
 
 // When the user clicks anywhere outside of the modal, close it
