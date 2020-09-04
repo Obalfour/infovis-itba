@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Makeover Monday Week 35</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="card" style="width: 1000px">
+  <div class="card-header">
+    Usando D3.js
+  </div>
+  <div class="card-body">
+     <style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #fff;
+  fill: steelblue;
+}
+
+.dot:hover { 
+ fill: #f00;
+}  
+
+.label {
+  fill: #000;
+} 
+
+div.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 60px;          
+    height: 28px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+  
+</style>
+        <script src="//d3js.org/d3.v5.min.js"></script>
+        <script>
+        var margin = {
+        top: 20,
+        right: 20,
+        bottom: 30,
+        left: 40
+    },
+    width = 400 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+var x = d3.scaleLinear().range([0, width]);
+var y = d3.scaleLinear().range([height, 0]);
+
+var svg = d3.select(".card-body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var xAxis = d3.axisBottom(x);
+var yAxis = d3.axisLeft(y);
+
+d3.csv("https://raw.githubusercontent.com/aaizemberg/vis/gh-pages/2020/w35.csv").then(function(data) {
+
+    data.forEach(function(d) {
+        d.average = +d.average;
+        d.dismissals = +d.dismissals;
+    });
+
+    x.domain(d3.extent(data, function(d) {
+        return d.dismissals;
+    })).nice();
+    y.domain(d3.extent(data, function(d) {
+        return d.average;
+    })).nice();
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis)
+        .append("text")
+        .attr("class", "label")
+        .attr("x", width)
+        .attr("y", -6)
+        .style("text-anchor", "end")
+        .text("dismissals");
+
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .append("text")
+        .attr("class", "label")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("average")
+
+
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+    svg.selectAll(".dot")
+        .data(data)
+        .enter().append("image")
+        .attr("xlink:href", "https://cdn.iconscout.com/icon/free/png-256/baseball-game-play-sport-america-favorite-activity-33509.png") //should work with bmp
+        .attr("width", 20)
+        .attr("height", 20)
+        .attr("x", function(d) {
+            return x(d.dismissals);
+        })
+        .attr("y", function(d) {
+            return y(d.average);
+        })
+        .on("mouseover", function(d) {
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.batsman)
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        });
+
+
+    var legend = svg.selectAll(".legend")
+        .data(color.domain())
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) {
+            return "translate(0," + i * 20 + ")";
+        });
+
+    legend.append("rect")
+        .attr("x", width - 18)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", color);
+
+    legend.append("text")
+        .attr("x", width - 24)
+        .attr("y", 9)
+        .attr("dy", ".35em")
+        .style("text-anchor", "end")
+        .text(function(d) {
+            return d;
+        });
+
+});
+      </script>
+  </div>
+  </div>
+  <div class="card" style="width: 1000px">
+    <div class="card-header">
+    Modificando el svg de charticulator
+  </div>
+      <div class="card-body">
+        <img 
+    src="https://raw.githubusercontent.com/Obalfour/infovis-itba/gh-pages/Makeover%20Monday%20Week%2035/Week%2035%20visualization.svg" 
+    alt="Modificando el svg"/>
+      </div>
+    </div>
+</body>
