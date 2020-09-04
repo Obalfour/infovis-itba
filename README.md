@@ -5,6 +5,7 @@ Information Visualization @ITBA
 | :-------------: |:-------------:| 
 | [The National Registry of individuals](https://datos.gob.ar/dataset/otros-nombres-personas-fisicas)| [Popular Names](https://observablehq.com/@obalfour/untitled/2) |
 | [IG Web Data Connector](https://illonage.github.io/)| [Datagram](https://public.tableau.com/profile/oliver7403#!/vizhome/Datagram/Dashboard1) |
+| [Makeover Monday Week 35](https://data.world/makeovermonday/2020w35-indian-batsmen-v-left-arm-pace)| [Indian batsmen v left-arm pace](https://obalfour.github.io/infovis-itba/Makeover%20Monday%20Week%2035/index.html) |
 | [Makeover Monday Week 15](https://data.world/makeovermonday/2020w15-messi-vs-ronaldo-stats)| [Cristiano Ronaldo vs Lionel Messi](https://public.tableau.com/profile/oliver7403#!/vizhome/MakeoverMondayWeek15CristianoRonaldovsLionelMessi/STATS) |
 | [Makeover Monday Week 14](https://data.world/makeovermonday/2020w14)| [Unpaid Work](https://obalfour.github.io/infovis-itba/Makeover%20Monday%20Week%2014/index.html) |
 | [Makeover Monday Week 13](https://data.world/makeovermonday/2020w13-does-pineapple-belong-on-a-pizza)| [Does pineapple belong on a pizza?](https://my.visme.co/view/76pqmwzz-makeover-monday-week-13) |
