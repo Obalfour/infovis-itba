@@ -1,0 +1,61 @@
+country,date,cases,cum_cases
+Argentina,2020-09-01,10504,428239
+Argentina,2020-09-02,10933,439172
+Argentina,2020-09-03,12026,451198
+Argentina,2020-09-04,10684,461882
+Argentina,2020-09-05,9924,471806
+Argentina,2020-09-06,6986,478792
+Argentina,2020-09-07,9215,488007
+Argentina,2020-09-08,12027,500034
+Argentina,2020-09-09,12259,512293
+Argentina,2020-09-10,11905,524198
+Argentina,2020-09-11,11507,535705
+Argentina,2020-09-12,10776,546481
+Argentina,2020-09-13,9056,555537
+Argentina,2020-09-14,9909,565446
+Argentina,2020-09-15,11892,577338
+Argentina,2020-09-16,11674,589012
+Argentina,2020-09-17,12701,601713
+Argentina,2020-09-18,11945,613658
+Argentina,2020-09-19,9276,622934
+Argentina,2020-09-20,8431,631365
+Argentina,2020-09-21,8782,640147
+Argentina,2020-09-22,12027,652174
+Argentina,2020-09-23,12625,664799
+Argentina,2020-09-24,13467,678266
+Argentina,2020-09-25,12969,691235
+Argentina,2020-09-26,11249,702484
+Argentina,2020-09-27,8841,711325
+Argentina,2020-09-28,11807,723132
+Argentina,2020-09-29,13477,736609
+Argentina,2020-09-30,14392,751001
+United States of America,2020-09-01,43302,6066374
+United States of America,2020-09-02,39780,6106154
+United States of America,2020-09-03,43862,6150016
+United States of America,2020-09-04,50502,6200518
+United States of America,2020-09-05,44452,6244970
+United States of America,2020-09-06,31395,6276365
+United States of America,2020-09-07,24257,6300622
+United States of America,2020-09-08,26387,6327009
+United States of America,2020-09-09,33203,6360212
+United States of America,2020-09-10,35888,6396100
+United States of America,2020-09-11,47552,6443652
+United States of America,2020-09-12,41471,6485123
+United States of America,2020-09-13,34999,6520122
+United States of America,2020-09-14,33530,6553652
+United States of America,2020-09-15,38932,6592584
+United States of America,2020-09-16,38020,6630604
+United States of America,2020-09-17,44734,6675338
+United States of America,2020-09-18,48595,6723933
+United States of America,2020-09-19,44186,6768119
+United States of America,2020-09-20,36695,6804814
+United States of America,2020-09-21,52070,6856884
+United States of America,2020-09-22,39034,6895918
+United States of America,2020-09-23,37630,6933548
+United States of America,2020-09-24,44110,6977658
+United States of America,2020-09-25,55054,7032712
+United States of America,2020-09-26,45377,7078089
+United States of America,2020-09-27,36919,7115008
+United States of America,2020-09-28,33037,7148045
+United States of America,2020-09-29,42185,7190230
+United States of America,2020-09-30,42812,7233042
